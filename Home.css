@@ -1,0 +1,254 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.top-bar {
+  background-color: #000;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.top-bar img {
+  max-width: 10%;
+}
+
+.navigation-bar {
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  color: #fff;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+}
+
+.login i {
+  margin-right: 5px;
+}
+
+.image-text-overlay {
+  position: relative;
+  margin-top: 0px; /* Adjust the margin-top as needed */
+}
+
+.image {
+  background-image: url("Images/Screenshot 2023-12-27 at 14.48.27.png"); /* Update the path separator */
+  background-size: cover;
+  background-position: center;
+  height: 800px; /* Adjust the height as needed */
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity as needed */
+}
+
+.overlay img {
+  max-width: 100%;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  height: 200px;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adjust the overlay color and opacity as needed */
+}
+
+.content {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.custom-overlay {
+  position: relative;
+  margin-top: 0px; /* Adjust the margin-top as needed */
+  background-color: #333; /* Grey background color */
+  height: 1500px; /* Adjust the height as needed */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-content {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+  color: #fff; /* White text color */
+}
+
+.custom-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.custom-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.custom-content h4 {
+  font-size: 18px;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+button {
+  background-color: blue; /* White background color for the button */
+  color: white; /* Blue text color for the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.packages-section {
+  text-align: center;
+}
+
+.package {
+  display: inline-block;
+  margin: 0 20px;
+  padding: 20px;
+  background-color: #f2f2f2; /* Light grey background color */
+  border-radius: 10px;
+  text-align: left;
+  width: 250px;
+  height: 400px;
+  vertical-align: top;
+}
+
+.package h3 {
+  color: #333; /* Dark grey text color for package title */
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff; /* Blue text color for price */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+/* Default style for the buttons */
+.buy-now-button {
+  background-color: copper; /* Default color for the button */
+  color: #fff; /* White text color for the button */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 500px;
+  cursor: pointer;
+  display: block;
+  margin-top: 15px;
+  transition: background-color 0.3s;
+  width: 250px;
+}
+
+/* Specific styles for each package */
+#standard-package .buy-now-button {
+  background-color: silver; /* Silver color for Standard package button */
+}
+
+#premium-package .buy-now-button {
+  background-color: gold; /* Gold color for Premium package button */
+}
+
+/* Hover effect */
+.buy-now-button:hover {
+  background-color: darken(copper, 20%); /* Darken the default color on hover */
+}
+
+/* Border highlighting on banners */
+.package {
+  border: 2px solid transparent; /* Transparent border by default */
+  transition: border-color 0.3s;
+}
+
+/* Border color on hover */
+.package:hover {
+  border-color: blue; /* Copper color on hover */
+}
+
+/* Apply different border colors for different packages */
+#standard-package:hover {
+  border-color: silver; /* Silver color on hover for Standard package */
+}
+
+#premium-package:hover {
+  border-color: gold; /* Gold color on hover for Premium package */
+}
+
+.get-started-section {
+  background-color: #f2f2f2; /* Light grey background color */
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px; /* Adjust the margin-top as needed */
+}
+
+.get-started-content {
+  max-width: 600px; /* Adjust the max-width as needed */
+  margin: 0 auto; /* Center the content horizontally */
+}
+
+.get-started-section h2 {
+  color: #333; /* Dark grey text color for the heading */
+  margin-bottom: 20px; /* Adjust the margin-bottom as needed */
+}
+
+.get-started-content p {
+  margin-bottom: 10px; /* Adjust the margin-bottom as needed */
+}
