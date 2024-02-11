@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+          <li><a href="#" onclick="navigateTo('home')">Home</a></li>
+          <li><a href="#" onclick="navigateTo('analytics')">Analytics</a></li>
+          <li><a href="#" onclick="navigateTo('reports')">Reports</a></li>
+          <!-- Add more navigation links as needed -->
+        </ul>
+      </div>
+      <div class="content" id="content">
+        <!-- Content will be dynamically replaced here -->
+      </div>
+    </div>
+
+    <script>
+      function navigateTo(section) {
+        const content = document.getElementById("content");
+        switch (section) {
+          case "home":
+            content.innerHTML = "<h1>Welcome to the Dashboard!</h1>";
+            break;
+          case "analytics":
+            content.innerHTML = "<h1>Analytics Section</h1>";
+            break;
+          case "reports":
+            content.innerHTML = "<h1>Reports Section</h1>";
+            break;
+          // Add more cases for additional sections/pages
+          default:
+            content.innerHTML = "<h1>Page not found</h1>";
+        }
+      }
+    </script>
+  </body>
+</html>

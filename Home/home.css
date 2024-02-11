@@ -37,7 +37,7 @@ body {
 }
 
 .image {
-  background-image: url("Images/Screenshot 2023-12-27 at 14.48.27.png"); /* Update the path separator */
+  background-image: url("../Images/background.png"); /* Update the path separator */
   background-size: cover;
   background-position: center;
   height: 800px; /* Adjust the height as needed */
