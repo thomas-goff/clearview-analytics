@@ -3,43 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Clearview Analytics</title>
+    <link rel="stylesheet" href="dashboard.css" />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="dashboard">
-      <div class="sidebar">
-        <h2>Dashboard</h2>
-        <ul>
-          <li><a href="#" onclick="navigateTo('home')">Home</a></li>
-          <li><a href="#" onclick="navigateTo('analytics')">Analytics</a></li>
-          <li><a href="#" onclick="navigateTo('reports')">Reports</a></li>
-          <!-- Add more navigation links as needed -->
-        </ul>
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <h3>Menu</h3>
       </div>
-      <div class="content" id="content">
-        <!-- Content will be dynamically replaced here -->
-      </div>
+      <ul class="menu">
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Analytical Report</a></li>
+        <li><a href="#">Sales</a></li>
+        <li><a href="#">Debt and Credit</a></li>
+        <li><a href="#">Cashflow</a></li>
+        <li><a href="#">Asset and Liability</a></li>
+        <li><a href="#">Capital</a></li>
+        <li><a href="#">Budget</a></li>
+      </ul>
     </div>
-
-    <script>
-      function navigateTo(section) {
-        const content = document.getElementById("content");
-        switch (section) {
-          case "home":
-            content.innerHTML = "<h1>Welcome to the Dashboard!</h1>";
-            break;
-          case "analytics":
-            content.innerHTML = "<h1>Analytics Section</h1>";
-            break;
-          case "reports":
-            content.innerHTML = "<h1>Reports Section</h1>";
-            break;
-          // Add more cases for additional sections/pages
-          default:
-            content.innerHTML = "<h1>Page not found</h1>";
-        }
-      }
-    </script>
+    <div class="main-content">
+      <!-- Main content goes here -->
+      <h1>Welcome to Clearview Analytics Dashboard</h1>
+      <p>This is where your analytics and reports will be displayed.</p>
+    </div>
+    <script src="dashboard.js"></script>
   </body>
 </html>

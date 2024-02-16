@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.getElementById("login-form");
-  loginForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-    // Your login functionality goes here
+  const loginButton = document.querySelector(".login"); // Fix selector to target class
+  console.log("login", loginButton);
+  loginButton.addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent form submission
+
+    const username = document.getElementById("username").value; // Use .value to get input value
+    const password = document.getElementById("password").value; // Use .value to get input value
+
+    // Check if username and password match the credentials
+    if (username === "admin" && password === "password") {
+      console.log("accepted");
+      window.location.href = "../Dashboard/dashboard.html";
+    } else {
+      alert("Incorrect username or password. Please try again."); // Inform user about incorrect credentials
+    }
   });
 });
-
-//Need to do
-// 1. Create Api to pull login data
-// 2. if password is incorrect add forgot password link.
-// 3. add register button.
